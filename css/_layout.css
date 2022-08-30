@@ -1,0 +1,19 @@
+.container {
+    --container-padding: 18px;
+    max-width: calc(1170px + var(--container-padding) * 2);
+    padding:  0 var(--container-padding);
+    margin: 100px auto;
+}
+.grid {
+    --grid-col: 1;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-col), 1fr);
+    gap: 30px;
+}
+.grid--2-cols {
+    --grid-col: 2;
+}
+.grid--3-cols {
+    --grid-col: 3;
+}
+
